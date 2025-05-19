@@ -1,0 +1,15 @@
+# Menjalankan unit test pada folder tests
+coverage run -m pytest
+
+# Melihat hasil coverage pada html
+coverage html
+start htmlcov\index.html
+
+# Melihat Database PostgreeSQL
+psql -U datauser -d produk
+\dt  -- Lihat daftar tabel
+\d fashion_products  -- Lihat struktur tabel
+SELECT * FROM fashion_products LIMIT 5;  -- Lihat isi data
+
+# Url Google Sheets:
+https://docs.google.com/spreadsheets/d/1UXyc_ulWQZkK6rXhelkvYcbTDK5EkA4yfDtFEdb18G8/edit?gid=0#gid=0
